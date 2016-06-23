@@ -1,16 +1,16 @@
 /*  TABLE OF CONTENTS
     ---------------------------
-    *. @Imports
-    1. Generic styles
-    2. Home
-    3. More Informations
-    4. Newsletter
-    6. Social Icons
-    7. Footer/Copyright
-    8. Media Queries
+    @Imports
+    Generic styles
+    Home
+    More Informations
+    Newsletter
+    Social Icons
+    Footer/Copyright
+    Media Queries
 */
 /* ------------------------------------- */
-/* *. @Import & Reset .................. */
+/* @Import .................. */
 /* ------------------------------------- */
 /* http://bourbon.io/ Sass Mixin Library */
 /* custom CSS files */
@@ -206,7 +206,7 @@ table {
   }
 }
 /* ------------------------------------- */
-/* 1. Generic styles ................... */
+/* Generic styles ................... */
 /* ------------------------------------- */
 body {
   background: #20232D;
@@ -232,8 +232,6 @@ body, html {
   padding: 0;
   -webkit-tap-highlight-color: transparent;
   width: 100%;
-  height: 100%;
-
 }
 
 body, input, select, textarea {
@@ -428,7 +426,7 @@ sup {
 }
 
 /* ------------------------------------- */
-/* 2. Home ............................. */
+/* Home ............................. */
 /* ------------------------------------- */
 .light-btn {
   background: transparent;
@@ -612,7 +610,7 @@ sup {
 }
 
 /* ------------------------------------- */
-/* 3. More informations ................ */
+/* More informations ................... */
 /* ------------------------------------- */
 #info-wrap {
   background: #FFFFFF;
@@ -1142,7 +1140,7 @@ sup {
 }
 
 /* ------------------------------------- */
-/* 4. Newsletter ....................... */
+/* Newsletter .......................... */
 /* ------------------------------------- */
 .dialog,
 .dialog__overlay {
@@ -1521,7 +1519,7 @@ sup {
 }
 
 /* ------------------------------------- */
-/* Social Icons ..................... */
+/* Social Icons ........................ */
 /* ------------------------------------- */
 .social-icons {
   position: absolute;
@@ -1581,7 +1579,7 @@ sup {
 }
 
 /* ------------------------------------- */
-/* 7. Footer/Copyright ................. */
+/* Footer/Copyright .................... */
 /* ------------------------------------- */
 footer {
   padding: 10px 0;
@@ -1597,7 +1595,7 @@ footer p {
 }
 
 /* ------------------------------------- */
-/* VARIANT STARS ....................... */
+/* STARS ............................... */
 /* ------------------------------------- */
 #stars {
   width: 1px;
@@ -1707,8 +1705,33 @@ footer p {
   margin: 0px;
 }
 
+
 /* ------------------------------------- */
-/* CONSTELLATION ............... */
+/* FLAT SURFACE SHADER ................. */
+/* ------------------------------------- */
+#fss-part {
+  background: transparent !important;
+}
+
+#container {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.fss-wrap:before {
+  background: rgba(32, 35, 45, 0.5) !important;
+}
+
+.back-fss {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* ------------------------------------- */
+/* CONSTELLATION ....................... */
 /* ------------------------------------- */
 #constellationel {
   z-index: 1;
@@ -1718,7 +1741,7 @@ footer p {
 }
 
 /* ------------------------------------- */
-/* Media Queries .................... */
+/* Media Queries ....................... */
 /* ------------------------------------- */
 /* Large Devices, Wide Screens */
 /* Notebook devices */
@@ -1729,8 +1752,8 @@ footer p {
   }
   .global-overlay .overlay {
     left: 0;
-    /*width: 100%;
-    height: 100%;*/
+    width: 100%;
+    height: 100%;
   }
   .global-overlay .overlay.skew-part {
     -webkit-transform: skew(0deg, 0deg);
@@ -1807,10 +1830,10 @@ footer p {
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .light-btn {
-    max-width: 100%;
-    min-width: 100%;
-    /*margin-right: 0;
-    margin-bottom: 15px;*/
+    max-width: 70%;
+    min-width: 60%;
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 
   .action-btn {
@@ -1851,9 +1874,7 @@ footer p {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   #home-wrap {
-    padding: 50px 0 100px;
-    height: 100% !important;
-
+    padding: 18% 0 175px;
   }
   #home-wrap .content {
     padding: 0 3%;
@@ -1862,7 +1883,7 @@ footer p {
     font-size: 16px;
   }
   #home-wrap.minimal-phone {
-    height: 100% !important;
+    height: 100%;
   }
 
   h1.text-intro {
@@ -1917,7 +1938,6 @@ footer p {
 @media screen and (max-device-width: 667px) and (orientation: landscape) {
   #home-wrap {
     padding: 50px 0 100px;
-    height: 100% !important;
   }
 
   h1.text-intro {
