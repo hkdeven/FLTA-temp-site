@@ -5,7 +5,6 @@
     2. Home
     3. More Informations
     4. Newsletter
-    5. Contact
     6. Social Icons
     7. Footer/Copyright
     8. Media Queries
@@ -233,6 +232,8 @@ body, html {
   padding: 0;
   -webkit-tap-highlight-color: transparent;
   width: 100%;
+  height: 100%;
+
 }
 
 body, input, select, textarea {
@@ -1206,7 +1207,7 @@ sup {
   z-index: 5;
   opacity: 0;
   overflow: hidden;
-  background: url(../img/background-newsletter.jpg) center;
+  background: transparent;
   background-size: cover;
   border: 10px solid #415FA3;
   -webkit-transition: all 3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -1518,120 +1519,9 @@ sup {
     transform: translate3d(0, 50px, 0);
   }
 }
-/* ------------------------------------- */
-/* 5. Contact .......................... */
-/* ------------------------------------- */
-.info-contact {
-  margin-bottom: 0;
-}
-.info-contact .item-map {
-  padding: 0;
-}
-.info-contact .item-map:first-child {
-  padding-left: 15px;
-}
-.info-contact .item-map:last-child {
-  padding-right: 15px;
-}
-.info-contact .item-map .contact-item {
-  padding: 15px 0;
-  font-size: 14px;
-  text-align: center;
-}
-.info-contact .item-map .contact-item i {
-  color: #0fe0ba;
-  font-size: 2em;
-}
-.info-contact .item-map .contact-item a {
-  font-weight: 600;
-  color: #757A86;
-}
-.info-contact .item-map .contact-item a:hover {
-  color: #415FA3;
-}
-
-#contact-form .form-control {
-  background: #FFFFFF;
-  border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0;
-  box-shadow: none;
-  font-weight: 400;
-  outline: medium none;
-  height: 40px;
-  width: 100%;
-  color: #000000;
-  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
-  -moz-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
-  -ms-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
-  -o-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
-  transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
-  text-align: left;
-}
-#contact-form .form-control:hover, #contact-form .form-control:focus {
-  box-shadow: none;
-}
-#contact-form .form-control::-webkit-input-placeholder {
-  color: #747c83 !important;
-}
-#contact-form .form-control::-moz-placeholder {
-  color: #747c83 !important;
-}
-#contact-form .form-control:-moz-placeholder {
-  color: #747c83 !important;
-}
-#contact-form .form-control:-ms-input-placeholder {
-  color: #747c83 !important;
-}
-#contact-form textarea.form-control {
-  min-height: 150px;
-}
-#contact-form button#valid-form {
-  font-weight: 400;
-  padding: 1em 2em;
-  font-size: 1em;
-  display: block;
-  margin: 0 auto 0;
-  background: #0fe0ba;
-  color: #FFFFFF;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0;
-  font-weight: 700;
-  width: 100%;
-  line-height: 10px;
-}
-#contact-form button#valid-form:hover {
-  background: #415FA3;
-  color: #FFFFFF;
-}
-
-#block-answer {
-  min-height: 60px;
-  margin-top: 1em;
-  text-align: center;
-  color: #757A86;
-}
-
-.success-message, .error-message {
-  color: #757A86;
-}
-.success-message p, .error-message p {
-  color: #757A86 !important;
-}
-.success-message .ion-checkmark-round, .error-message .ion-checkmark-round {
-  color: #27AE60;
-}
-
-.error-message .ion-close-round {
-  color: #FF1D4D;
-}
 
 /* ------------------------------------- */
-/* 6. Social Icons ..................... */
+/* Social Icons ..................... */
 /* ------------------------------------- */
 .social-icons {
   position: absolute;
@@ -1801,134 +1691,6 @@ footer p {
     transform: translateY(-2000px);
   }
 }
-/* ------------------------------------- */
-/* VARIANT CLOUD ....................... */
-/* ------------------------------------- */
-#cloud-animation {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
-  position: fixed;
-}
-#cloud-animation img {
-  width: 100%;
-  left: 0;
-  top: 10%;
-  position: absolute;
-}
-
-@-webkit-keyframes animCloud {
-  from {
-    -webkit-transform: translateX(100%);
-  }
-  to {
-    -webkit-transform: translateX(-100%);
-  }
-}
-@-moz-keyframes animCloud {
-  from {
-    -moz-transform: translateX(100%);
-  }
-  to {
-    -moz-transform: translateX(-100%);
-  }
-}
-@keyframes animCloud {
-  from {
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-  to {
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
-#cloud1 {
-  -webkit-animation: animCloud 25s infinite linear;
-  -moz-animation: animCloud 25s infinite linear;
-  animation: animCloud 25s infinite linear;
-}
-
-#cloud2 {
-  -webkit-animation: animCloud 35s infinite linear;
-  -moz-animation: animCloud 35s infinite linear;
-  animation: animCloud 35s infinite linear;
-}
-
-#cloud3 {
-  -webkit-animation: animCloud 45s infinite linear;
-  -moz-animation: animCloud 45s infinite linear;
-  animation: animCloud 45s infinite linear;
-}
-
-#cloud4 {
-  -webkit-animation: animCloud 55s infinite linear;
-  -moz-animation: animCloud 55s infinite linear;
-  animation: animCloud 55s infinite linear;
-}
-
-/* ------------------------------------- */
-/* VARIANT YOUTUBE ..................... */
-/* ------------------------------------- */
-.mbYTP_wrapper {
-  width: 100vw !important;
-  z-index: 0 !important;
-  min-width: 0 !important;
-  left: 0 !important;
-}
-
-.ytb-overlay {
-  background: rgba(32, 35, 45, 0.6);
-}
-
-.light-overlay {
-  background: rgba(32, 35, 45, 0.5) !important;
-}
-
-#player-nav {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  text-align: center;
-  z-index: 1;
-}
-#player-nav li {
-  display: inline-block;
-  background: rgba(15, 224, 186, 0.4);
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0;
-  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
-  -moz-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
-  -ms-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
-  -o-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
-  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
-}
-#player-nav li:hover {
-  background: rgba(15, 224, 186, 0.8);
-}
-#player-nav li:hover a {
-  color: #FFFFFF;
-}
-#player-nav li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.5);
-}
 
 /* ------------------------------------- */
 /* VARIANT GRADIENT .................... */
@@ -1946,62 +1708,7 @@ footer p {
 }
 
 /* ------------------------------------- */
-/* VARIANT FLAT SURFACE SHADER ......... */
-/* ------------------------------------- */
-#fss-part {
-  background: transparent !important;
-}
-
-#container {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  left: 0;
-}
-
-.fss-wrap:before {
-  background: rgba(32, 35, 45, 0.5) !important;
-}
-
-.back-fss {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-/* ------------------------------------- */
-/* VARIANT RAIN ........................ */
-/* ------------------------------------- */
-#rainy {
-  height: 100%;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-#home-wrap:before {
-  background: rgba(32, 35, 45, 0.5) !important;
-}
-
-/* ------------------------------------- */
-/* VARIANT SQUARE ...................... */
-/* ------------------------------------- */
-#square-canvas {
-  display: block;
-  position: fixed;
-  top: -100px;
-}
-
-/* ------------------------------------- */
-/* VARIANT STAR WARS ................... */
-/* ------------------------------------- */
-#starfield {
-  position: fixed !important;
-}
-
-/* ------------------------------------- */
-/* VARIANT CONSTELLATION ............... */
+/* CONSTELLATION ............... */
 /* ------------------------------------- */
 #constellationel {
   z-index: 1;
@@ -2011,18 +1718,7 @@ footer p {
 }
 
 /* ------------------------------------- */
-/* GALLERY PHOTOS ...................... */
-/* ------------------------------------- */
-.pswp__bg {
-  background: #20232D;
-}
-
-.pswp__caption h4 {
-  margin-bottom: 10px !important;
-}
-
-/* ------------------------------------- */
-/* 8. Media Queries .................... */
+/* Media Queries .................... */
 /* ------------------------------------- */
 /* Large Devices, Wide Screens */
 /* Notebook devices */
@@ -2033,8 +1729,8 @@ footer p {
   }
   .global-overlay .overlay {
     left: 0;
-    width: 100%;
-    height: 100%;
+    /*width: 100%;
+    height: 100%;*/
   }
   .global-overlay .overlay.skew-part {
     -webkit-transform: skew(0deg, 0deg);
@@ -2111,10 +1807,10 @@ footer p {
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .light-btn {
-    max-width: 70%;
-    min-width: 60%;
-    margin-right: 0;
-    margin-bottom: 15px;
+    max-width: 100%;
+    min-width: 100%;
+    /*margin-right: 0;
+    margin-bottom: 15px;*/
   }
 
   .action-btn {
@@ -2156,6 +1852,8 @@ footer p {
 @media only screen and (max-width: 480px) {
   #home-wrap {
     padding: 50px 0 100px;
+    height: 100% !important;
+
   }
   #home-wrap .content {
     padding: 0 3%;
@@ -2164,11 +1862,7 @@ footer p {
     font-size: 16px;
   }
   #home-wrap.minimal-phone {
-    height: 100vh;
-  }
-
-  #contact-form {
-    margin-top: 50px;
+    height: 100% !important;
   }
 
   h1.text-intro {
@@ -2181,10 +1875,6 @@ footer p {
 
   .center-text h3 {
     font-size: 30px !important;
-  }
-
-  .text-countdown #getting-started .second-timer {
-    min-width: 55px;
   }
 
   .light-btn {
@@ -2227,6 +1917,7 @@ footer p {
 @media screen and (max-device-width: 667px) and (orientation: landscape) {
   #home-wrap {
     padding: 50px 0 100px;
+    height: 100% !important;
   }
 
   h1.text-intro {
@@ -2235,10 +1926,6 @@ footer p {
 
   h2.text-intro {
     font-size: 18px;
-  }
-
-  #contact-form {
-    margin-top: 30px;
   }
 
   .dialog__content {
