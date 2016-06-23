@@ -13,7 +13,7 @@
 
 	<body>
 
-		<!-- Page preloader -->
+		<!-- preloader -->
 		<div id="loading">
 			<div id="preloader">
 				<span></span>
@@ -21,30 +21,30 @@
 			</div>
 		</div>
 
-		<!-- Overlay -->
+		<!-- constellation overlay -->
 		<div class="global-overlay">
 
 			<canvas id="constellationel"></canvas>
 
 			<div class="overlay">
 
-				<!-- Lines Overlay -->
+				<!-- lines in overlay-->
 				<div class="overlay-dash"></div>
 
 			</div>
 		</div>
 
-		<!-- Start-->
+		<!-- start of home-->
 		<section id="home-wrap">
 
-			<!-- Stars Overlay -->
+			<!-- stars overlay -->
 			<div id='stars'></div>
 			<div id='stars2'></div>
 			<div id='stars3'></div>
 
 			<div class="content">
 
-				<!-- Logo -->
+				<!-- logo -->
 				<img src="http://guiadecarreras.udg.mx/wp-content/themes/carreras_2014/img/alfabeto/250/f.png" alt="" class="brand-logo text-intro opacity-0" />
 
 				<h1 class="text-intro opacity-0"><span class="polyfy-title">Fort Lauderdale Tech Association</span></h1>
@@ -55,7 +55,7 @@
 
 			</div>
 
-			<!-- Social icons -->
+			<!-- social icons -->
 			<div class="social-icons text-intro opacity-0">
 
 				<a href="#"><i class="fa fa-facebook"></i></a>
@@ -76,22 +76,22 @@
 					<h4>Get FLTA News</h4>
 					<p>Subscribe to our mailing list to be notified of the official launch of the Fort Lauderdale Tech Association.</p>
 
-					<!-- Newsletter Form -->
+					<!-- form -->
 					<div id="subscribe">
 		                <form action="php/notify-me.php" id="notifyMe" method="POST">
 		                    <div class="form-group">
 		                        <div class="controls">
-		                        	<!-- Field  -->
+		                        	<!-- field  -->
 		                        	<input type="text" id="mail-sub" name="email" placeholder="Click here to write your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your email'" class="form-control email srequiredField" />
-		                        	<!-- Spinner top left during the submission -->
+		                        	<!-- spinner top left during the submission -->
 		                        	<i class="fa fa-spinner opacity-0"></i>
-		                            <!-- Button -->
+		                            <!-- button -->
 		                            <button class="btn btn-lg submit">Get notified</button>
 		                            <div class="clear"></div>
 		                        </div>
 		                    </div>
 		                </form>
-						<!-- Answer for the newsletter form is displayed in the next div, do not remove it. -->
+						<!-- answer for the newsletter form is displayed in the next div, do not remove it. -->
 						<div class="block-message">
 							<div class="message">
 								<p class="notify-valid"></p>
@@ -101,55 +101,22 @@
 
 				</div>
 
-				<!-- Button Cross to close the Newsletter Popup -->
+				<!-- close X for popup window -->
 				<button class="close-newsletter" data-dialog-close><i class="icon ion-close-round"></i></button>
 
 			</div>
 
 		</div>
-		<!-- Root element of PhotoSwipe, the gallery. Must have class pswp. -->
+
 		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 		    <div class="pswp__bg"></div>
-
-		    <!-- Slides wrapper with overflow:hidden. -->
+		    <!-- slides wrapper up to three - edit in css not here -->
 		    <div class="pswp__scroll-wrap">
-
 		        <div class="pswp__container">
 		            <div class="pswp__item"></div>
 		            <div class="pswp__item"></div>
 		            <div class="pswp__item"></div>
 		        </div>
-
-		        <div class="pswp__ui pswp__ui--hidden">
-		            <div class="pswp__top-bar">
-		                <div class="pswp__counter"></div>
-		                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-		                <button class="pswp__button pswp__button--share" title="Share"></button>
-		                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-		                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-		                <div class="pswp__preloader">
-		                    <div class="pswp__preloader__icn">
-		                      <div class="pswp__preloader__cut">
-		                        <div class="pswp__preloader__donut"></div>
-		                      </div>
-		                    </div>
-		                </div>
-
-		            </div>
-
-		            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-		                <div class="pswp__share-tooltip"></div>
-		            </div>
-		            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-		            </button>
-		            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-		            </button>
-		            <div class="pswp__caption">
-		                <div class="pswp__caption__center"></div>
-		            </div>
-		        </div>
-
 		    </div>
 		</div>
 
