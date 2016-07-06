@@ -417,12 +417,12 @@ sup {
 
 ::-moz-selection {
   color: #FFFFFF;
-  background-color: #0fe0ba;
+  background-color: #415FA3;
 }
 
 ::selection {
   color: #FFFFFF;
-  background-color: #0fe0ba;
+  background-color: #415FA3;
 }
 
 /* ------------------------------------- */
@@ -1590,7 +1590,7 @@ footer p {
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #757A86;
 }
 
